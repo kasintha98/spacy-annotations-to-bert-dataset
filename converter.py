@@ -1,7 +1,7 @@
 import json
 import csv
 
-f = open('annotations v1.3.json', encoding="utf8")
+f = open('annotations v1.4.json', encoding="utf8")
 
 annotations = json.load(f)
 # final_data = [["Sentence #", "Word", "Tag"]]
@@ -11,7 +11,7 @@ annotations = json.load(f)
 
 #print(annotations['classes'])
 
-with open('ner_dataset1.3.csv', 'w', newline='', encoding="utf8") as file:
+with open('ner_dataset1.4.csv', 'w', newline='', encoding="utf8") as file:
     writer = csv.writer(file)
     writer.writerow(["Sentence #", "Word", "Tag"])
 
